@@ -15,6 +15,8 @@ package singletons.lazyInitialization;
  * To prevent Singleton failure while due to reflection it had to throw a run-time exception
  * in constructor, if the constructor is already initialized and some class want to initialize it again
  * {@link SingletonWithLazyInitializationReflectionProofTester}.
+ * <p>
+ * This approach is described in Joshua Bloch's book "Effective Java" (p.333, 334).
  */
 public class SingletonWithLazyInitializationReflectionProof {
 

@@ -22,7 +22,8 @@ package singletons.singletonField;
  * <p>
  * Issue 2: Instance is created even though client application might not be using it.
  * If Singleton class creates a database connection or a socket. This may cause the memory leak problem.
- * The solution is to create the new instance of the class, when needed.
+ * The solution is to create the new instance of the class, when needed
+ * ({@link singletons.lazyInitialization.SingletonWithLazyInitializationReflectionProof}).
  * <p>
  * This approach is described in Joshua Bloch's book "Effective Java" (p.17).
  */
